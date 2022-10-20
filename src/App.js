@@ -8,7 +8,6 @@ import { Skills } from "./components/skills";
 import { Contact } from "./components/contacts";
 import { Footer } from "./components/footer";
 
-
 function App() {
   return (
     <div className="App">
