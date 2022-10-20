@@ -1,0 +1,351 @@
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.navbar .nav-link {
+    color: black;
+    font-size: 17px;
+}
+
+.header {
+    height: 92vh;
+}
+
+.main-head {
+    overflow: hidden;
+    height: 90vh;
+    padding-top: 100px;
+    background: -webkit-linear-gradient(left, #1c0259 10%, #0b013d 20%, rgb(14, 0, 41) 47%, rgb(7, 7, 7) 100%);
+}
+
+.main-head .row .col h3 {
+    font-size: 39px;
+}
+
+.main-head .row .col p {
+    font-size: 17px;
+}
+
+.main-head .row .col .btn-ports {
+    font-size: 17px;
+    background-color: orange;
+    color: white;
+}
+
+.main-head .row .col .btn-ports:hover {
+    background-color: rgb(253, 182, 52);
+}
+
+
+.main-about {
+    background: -webkit-linear-gradient(left, #1c0259 10%, #0b013d 20%, rgb(14, 0, 41) 47%, rgb(7, 7, 7) 100%);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.main-about .container {
+    margin-bottom: 380px;
+}
+
+.main-about .container .row {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+.main-about .container .col {
+    background-color: transparent;
+}
+
+
+.main-ports {
+    padding-top: 50px;
+    margin-top: -350px;
+    margin-bottom: 40px;
+}
+
+.main-ports .row .col .port-card{
+    border-radius: 20px;
+}
+
+.main-ports .row .col .port-card .card-body .card-title {
+    font-size: 25px;
+}
+
+.main-ports .row .col .port-card .card-body .card-text {
+    font-size: 16px;
+}
+
+.main-ports .row .col .port-card .images{
+    border-radius: 22px;
+    max-height: 220px;
+    min-height: 220px;
+    object-fit: cover;
+}
+
+.main-ports .row .col .port-card .btn-reads {
+    background-color: #0b013d;
+    outline: none !important;
+}
+
+.main-ports .row .col .port-card .card-body .btn-reads:hover {
+    background-color: #110358;
+}
+
+
+
+#skills {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#skills .container h2 {
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+#skills .container .row .main {
+    border-radius: 20px;
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #0b013d;
+  display: inline-block;
+  padding: 2px 2px 2px 12px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  animation-delay: 4s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #0b013d;
+}
+
+.bar.back::before{
+  background-color: #0b013d;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+
+@keyframes load{
+    from {
+      width: 0%
+    }
+}
+
+@-webkit-keyframes load{
+    from {
+        width: 0%
+    }
+}
+
+@-moz-keyframes load{
+    from {
+        width: 0%
+    }
+}
+
+@-o-keyframes load{
+    from {
+        width: 0%
+    }
+}
+
+.contacts {
+    padding-top: 60px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    background: -webkit-linear-gradient(left, #1c0259 10%, #0b013d 20%, rgb(14, 0, 41) 47%, rgb(7, 7, 7) 100%);
+}
+
+.main-cont .row .contact {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin-bottom: 100px;
+}
+
+.main-cont .row .contact .btn-cont {
+    background-color: #0b013d;
+    border-radius: 12px;
+    color: white;
+}
+
+.main-cont .row .contact .btn-cont:hover {
+    background-color: #1a0777;
+}
+
+.footers {
+    background: -webkit-linear-gradient(left, #1c0259 10%, #0b013d 20%, rgb(14, 0, 41) 47%, rgb(7, 7, 7) 100%);
+    margin-top: -10px;
+}
+
+.footers .row {
+    background-color: transparent;
+}
+
+.footers .row .col {
+    font-size: 19px;
+}
+
+
+@media (max-width:768px) {
+
+    .navbar .navbar-brand {
+        font-weight: bold;
+        font-size: 23px;
+    }
+    
+    .navbar .nav-link {
+        color: black;
+        font-size: 16px;
+    }
+    
+    .main-head {
+        height: 50vh;
+    }
+    
+    .main-head .row .col h3 {
+        font-size: 36px;
+    }
+
+    .main-head .row .col p {
+        font-size: 16px;
+    }
+
+    
+    .main-about .container {
+        margin-bottom: 360px;
+    }
+
+    
+    .bar{
+        background-color: #EEE;
+        padding: 2px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: #FFF;
+        font-weight: bold;
+    }
+
+    
+    .main-ports .row .col .port-card .card-body .card-title {
+        font-size: 23px;
+    }
+
+    .main-ports .row .col .port-card .card-body .card-text {
+        font-size: 14px;
+    }
+            
+    .main-ports .row .col .port-card .images{
+        border-radius: 22px;
+        max-height: 210px;
+        min-height: 210px;
+        object-fit: cover;
+    }
+    
+    .contacts {
+        padding-top: 30px;
+    }
+
+    .footers .row .col {
+        font-size: 17px;
+    }
+
+}
+
+
+@media (max-width:450px) {
+
+    .navbar .navbar-brand {
+        font-weight: bold;
+        font-size: 22px;
+    }
+    
+    .navbar .nav-link {
+        color: black;
+        font-size: 15px;
+    }
+    
+    .main-head {
+        height: 100vh;
+    }
+
+    
+    .main-about .container {
+        margin-bottom: 360px;
+    }
+
+    
+    .bar{
+        background-color: #EEE;
+        padding: 2px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: #FFF;
+        font-weight: bold;
+    }
+    
+    .main-ports .row .col .port-card .card-body .card-title {
+        font-size: 23px;
+    }
+
+    .main-ports .row .col .port-card .card-body .card-text {
+        font-size: 14px;
+    }
+    
+    .main-ports .row .col .port-card .images{
+        border-radius: 22px;
+        max-height: 220px;
+        min-height: 220px;
+        object-fit: cover;
+    }
+
+    .contacts {
+        padding-top: 30px;
+    }
+
+
+    .footers .row .col {
+        font-size: 17px;
+    }
+}
